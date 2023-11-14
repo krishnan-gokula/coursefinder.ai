@@ -1,0 +1,48 @@
+/* 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 0;
+  right: 0;
+  color: transparent;
+  cursor: pointer;
+}
+
+Reset styles for date input
+input[type="date"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+} */
+
+/* Replace the calendar icon with a custom icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url('../images/calendar.svg') no-repeat center center;
+  opacity: 1;
+  position: relative;
+  width: 1.2em; /* Adjust the width and height as needed */
+  height: 1.2em;
+  cursor: pointer;
+}
+.card { 
+  border-color: transparent;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+}
+.carousel-indicators {
+  bottom: -2rem;
+  margin: 0;
+}
+.carousel-indicators button {
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.5) !important;
+}
+.carousel-indicators button.active {
+  background-color:  #0e1b2c !important;
+}
+
+.fs-20 {
+  font-size: 1.25rem;
+}
